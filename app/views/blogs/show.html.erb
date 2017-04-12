@@ -1,2 +1,5 @@
 <h2><%= @blog.title %></h2>
 <p><%= @blog.text %></p>
+
+<hr>
+<%= link_to 'Edit', edit_blog_path(@blog), :class => 'btn btn-default' %>
