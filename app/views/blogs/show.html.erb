@@ -3,3 +3,7 @@
 
 <hr>
 <%= link_to 'Edit', edit_blog_path(@blog), :class => 'btn btn-default' %>
+<%= link_to 'Delete', blog_path(@blog), 
+                                  method: :delete,
+                                  data: {Confirm: 'Are you sure?'},
+                                  :class => 'btn btn-danger' %>
